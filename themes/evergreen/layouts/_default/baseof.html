@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode | default "en" }}'>
+  {{ partial "head/head.html" . }}
+  <body class="bg-zinc-100 dark:bg-gray-800">
+    {{ partial "header/header.html" . }}
+    {{ partial "nav.html" . }}
+    <div class="content">{{ block "main" . }}{{ end }}</div>
+    {{ partial "partials/scrollToTop.html" . }}
+    {{ partial "footer/footer.html" . }}
+    {{ partial "footer/script-footer.html" . }}
+  </body>
+</html>

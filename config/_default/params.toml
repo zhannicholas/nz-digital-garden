@@ -1,0 +1,12 @@
+WelcomeMessage = "Hello, I am Nicholas Zhan"
+
+Title = "NZ's Digital Garden"
+
+startYear = "2018"
+
+author = "Nicholas Zhan"
+
+[social]
+email = "zhan_nicholas@outlook.com"
+github = "https://github.com/zhannicholas"
+telegram = "https://t.me/zhannicholas"

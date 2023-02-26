@@ -1,0 +1,4 @@
+baseURL = "https://example.com"
+
+[build]
+  writeStats = true

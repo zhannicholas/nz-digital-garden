@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+font-family: ui-sans-serif,
+system-ui,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji,
+NotoColorEmoji,
+Segoe UI Symbol,
+Android Emoji,
+EmojiSymbols;
+
+/* See
+ * https://stackoverflow.com/questions/64430464/how-to-prevent-alpine-js-modal-from-showing-every-time-i-refresh-the-page
+ * on how to prevent alpine hidden elems revealing glitch at page load/refresh
+ * time. */
+[x-cloak] {
+  display: none !important;
+}
+
+/* Should survive minification (referred in footer). */
+.example-style {
+  font-weight: normal;
+}
+
+/* No references, so removed when minifying. */
+.removed-style {
+  color: red;
+}

@@ -1,0 +1,65 @@
+baseURL = "./"
+title = "'s Digital Garden"
+languageCode = "zh-cn"
+disableAliases = true
+disableHugoGeneratorInject = true
+enableEmoji = true
+#enableGitInfo = true
+enableRobotsTXT = true
+DefaultContentLanguage = "zh"
+paginate = 7
+rssLimit = 10
+
+# Theme
+theme = "evergreen"
+# GoogleAnalytic
+#googleAnalytics = ""
+
+canonifyURLs = true
+
+# add output format for section sitemap.xml
+[outputFormats.SITEMAP]
+mediaType = "application/xml"
+baseName = "sitemap"
+isHTML = false
+isPlainText = true
+noUgly = true
+rel  = "sitemap"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      linkify = false
+      table = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+  category = "Categories"
+  tag = "Tags"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.110.0"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "node_modules/alpinejs-scroll-to/dist/scroll-to.esm.js"
+    target = "static/js/alpinejs-scroll-to.js"
+  [[module.mounts]]
+    source = "node_modules/alpinejs/dist/module.esm.js"
+    target = "static/js/alpinejs.js"
