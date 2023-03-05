@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://zhannicholas.github.io"
 
 [build]
   writeStats = true
