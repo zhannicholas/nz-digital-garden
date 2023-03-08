@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+scale 350 width
+[*] --> R : Process Created
+R --> D: Waiting for Resources and Signals
+D --> R: Wakes Up / Signal
+R --> S: Waiting for Resources
+S --> R: Wakes Up
+R --> T: SIGSTOP
+T --> R: SIGCONT
+R --> Z: exit() or termination signals
+
+R : RUNNING or RUNNABLE
+D: UNINTERRUPTIBLE SLEEP
+S: INTERRUPTIBLE SLEEP
+T: STOPPED
+Z: ZOMBIE
+@enduml
