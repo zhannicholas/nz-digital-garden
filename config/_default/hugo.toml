@@ -1,10 +1,11 @@
-baseURL = "./"
+baseURL = "https://zhannicholas.github.io"
 title = "'s Digital Garden"
 languageCode = "zh-cn"
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
-#enableGitInfo = true
+enableGitInfo = true
+hasCJKLanguage = true
 enableRobotsTXT = true
 DefaultContentLanguage = "zh"
 paginate = 7

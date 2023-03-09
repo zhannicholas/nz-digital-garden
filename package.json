@@ -11,17 +11,6 @@
     "lint:scripts": "eslint themes/evergreen/assets/js",
     "lint:markdown": "markdownlint *.md content/**/*.md"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/indaco/gohugo-tailwindcss-alpinejs-starter.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/indaco/gohugo-tailwindcss-alpinejs-starter/issues"
-  },
-  "homepage": "https://github.com/indaco/gohugo-tailwindcss-alpinejs-starter#readme",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
