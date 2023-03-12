@@ -1,17 +1,8 @@
-//const colors = require("tailwindcss/colors");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
-const rootDir = __dirname + "/../../../..";
-const layoutsDir = rootDir + "/layouts";
-const themesDir = rootDir + "/themes";
-const contentDir = rootDir + "/content";
-
+// tailwind.config.js
 module.exports = {
-  content: [
-    layoutsDir + "/**/*.html",
-    themesDir + "/**/*.html",
-    contentDir + "/**/*.md",
-    contentDir + "/**/*.html",
-  ],
+  content: ['./layouts/**/*.html', './content/**/*.md'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -68,10 +59,5 @@ module.exports = {
   variants: {
     typography: ["dark"],
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/line-clamp"),
-    require("@tailwindcss/aspect-ratio"),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };

@@ -11,11 +11,6 @@ DefaultContentLanguage = "zh"
 paginate = 7
 rssLimit = 10
 
-# Theme
-theme = "evergreen"
-# GoogleAnalytic
-#googleAnalytics = ""
-
 canonifyURLs = true
 
 # add output format for section sitemap.xml
@@ -61,6 +56,4 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/alpinejs-scroll-to/dist/scroll-to.esm.js"
     target = "static/js/alpinejs-scroll-to.js"
-  [[module.mounts]]
-    source = "node_modules/alpinejs/dist/module.esm.js"
-    target = "static/js/alpinejs.js"
+

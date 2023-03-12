@@ -26,6 +26,9 @@ jobs:
       - name: npm install
         run: npm install
 
+      - name: tailwindcss
+        run: tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css
+
       - name: Build minified
         run: hugo --environment production --minify
 
