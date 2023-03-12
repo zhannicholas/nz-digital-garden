@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently npm:watch:*",
-    "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
+    "watch:tw": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server -D --gc",
-    "build": "rm -rf public && tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css && hugo --gc --minify",
+    "build": "rm -rf public && npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css && hugo --gc --minify",
     "lint": "npm run -s lint:scripts && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js",
     "lint:markdown": "markdownlint *.md content/**/*.md"
