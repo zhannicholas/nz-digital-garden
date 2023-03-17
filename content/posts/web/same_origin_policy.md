@@ -2,7 +2,7 @@
 author: Nicholas Zhan
 title: "浏览器的同源策略"
 date: 2023-03-10T21:38:42+08:00
-draft: true
+draft: false
 language: zh-cn
 featured_image:
 summary: 浏览器的同源策略（same-origin policy）是保障 Web 安全的一种重要机制，它规定了在一个源中加载的文档（document）或脚本（script）与来自不同源的其它文档或脚本进行交互的方式。只有同源的文档或脚本之间才可以相互交互。
