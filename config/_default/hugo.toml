@@ -1,5 +1,5 @@
 baseURL = "https://zhannicholas.github.io"
-title = "'s Digital Garden"
+title = ""
 languageCode = "zh-cn"
 disableAliases = true
 disableHugoGeneratorInject = true
