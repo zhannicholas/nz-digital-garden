@@ -10,11 +10,11 @@
 {{ if gt (len $backlinks) 0 }}
 <hr>
   <aside>
-    <h3 class="text-2xl font-black tracking-tight text-indigo-500 capitalize dark:text-indigo-300 sm:text-2xl">Linked References</h3>
+    <h3 class="text-2xl font-black tracking-tight text-primary-500 capitalize dark:text-primary-300 sm:text-2xl">Linked References</h3>
     <div class="backlinks">
       <ul>
        {{ range $backlinks }}
-          <p class="inline-flex items-center rounded-md bg-gray-300 hover:bg-indigo-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize"><a style="color: var(--link);" href="{{ .RelPermalink | replaceRE "/$" ""  }}">{{ .Params.blogtitle | default .Title }}</a></p>
+          <p class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize"><a style="color: var(--link);" href="{{ .RelPermalink | replaceRE "/$" ""  }}">{{ .Params.blogtitle | default .Title }}</a></p>
        {{ end }}
      </ul>
     </div>
@@ -29,10 +29,10 @@
 <aside class="related">
   {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 -}}
   {{ with $related -}}
-  <h3 class="text-2xl font-black tracking-tight text-indigo-500 capitalize dark:text-indigo-300 sm:text-2xl">Related Content</h3>
+  <h3 class="text-2xl font-black tracking-tight text-primary-500 capitalize dark:text-primary-300 sm:text-2xl">Related Content</h3>
   <ul>
   {{ range . -}}
-  <p class="inline-flex items-center rounded-md bg-gray-300 hover:bg-indigo-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize"><a style="color: var(--link);" href="{{ .RelPermalink | replaceRE "/$" ""  }}">{{ .Params.blogtitle | default .Title }}</a></p>
+  <p class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize"><a style="color: var(--link);" href="{{ .RelPermalink | replaceRE "/$" ""  }}">{{ .Params.blogtitle | default .Title }}</a></p>
   {{ end -}}
   </ul>
   {{ end -}}
