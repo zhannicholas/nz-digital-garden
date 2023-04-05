@@ -1,5 +1,5 @@
 baseURL = "https://zhannicholas.github.io"
-title = ""
+title = "NZ's Digital Garden"
 languageCode = "zh-cn"
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -8,7 +8,7 @@ enableGitInfo = true
 hasCJKLanguage = true
 enableRobotsTXT = true
 DefaultContentLanguage = "zh"
-paginate = 7
+paginate = 9
 rssLimit = 10
 
 canonifyURLs = true
